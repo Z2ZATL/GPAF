@@ -1,0 +1,19 @@
+services:
+  agent-zero:
+    container_name: agent-zero
+    image: frdel/agent-zero:latest
+    volumes:
+      - ./agent-zero:/a0
+      # Mount entire Windows drives for full system access
+      - C:/:/mnt/c
+      # - D:/:/mnt/d  # ปิดการใช้งาน D:/ drive เพราะไม่มีในระบบ
+      # Uncomment additional drives as needed
+      # - E:/:/mnt/e
+      # - F:/:/mnt/f
+      # Common Windows folders for easy access
+      - C:/Users:/workspace/Users
+      - C:/Windows:/workspace/Windows
+      - C:/Program Files:/workspace/Program_Files
+      - C:/Program Files (x86):/workspace/Program_Files_x86
+    ports:
+      - "50080:80"

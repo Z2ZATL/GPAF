@@ -1,0 +1,61 @@
+# version: '3.8'  # Removed deprecated version field
+
+services:
+  gpaf:
+    build:
+      context: .
+      dockerfile: deployment/docker/Dockerfile
+    container_name: gpaf_agent
+    ports:
+      - "50001:5000"
+    volumes:
+      - ./deployment/docker/memory:/app/memory
+      - ./deployment/docker/knowledge:/app/knowledge  
+      - ./deployment/docker/logs:/app/logs
+      - ./deployment/docker/work_dir:/app/work_dir
+      - ./deployment/docker/tmp:/app/tmp
+      # Mount entire Windows drives for full system access
+      - C:/:/mnt/c
+      - D:/:/mnt/d
+      # Uncomment additional drives as needed
+      # - E:/:/mnt/e
+      # - F:/:/mnt/f
+      # Common Windows folders for easy access
+      - C:/Users:/workspace/Users
+      - C:/Windows:/workspace/Windows
+      - C:/Program Files:/workspace/Program_Files
+      - C:/Program Files (x86):/workspace/Program_Files_x86
+    environment:
+      - PYTHONUNBUFFERED=1
+      - FLASK_ENV=production
+      - FLASK_DEBUG=false
+      - WEB_UI_HOST=0.0.0.0
+      - WEB_UI_PORT=5000
+      - DISABLE_RFC=true
+      
+      # Authentication
+      - AUTH_LOGIN=admin
+      - AUTH_PASSWORD=gpaf123
+      
+      # API Keys
+      - API_KEY_OPENAI=${API_KEY_OPENAI:-}
+      - API_KEY_ANTHROPIC=${API_KEY_ANTHROPIC:-}
+      - API_KEY_GOOGLE=${API_KEY_GOOGLE:-}
+      - API_KEY_MISTRAL=${API_KEY_MISTRAL:-}
+      - API_KEY_GROQ=${API_KEY_GROQ:-}
+      - API_KEY_PERPLEXITY=${API_KEY_PERPLEXITY:-}
+      
+      # Database and storage
+      - SQLITE_DB_PATH=/app/memory/database.db
+      - LOG_LEVEL=INFO
+      
+      # Tiktoken cache
+      - TIKTOKEN_CACHE_DIR=/tmp/tiktoken_cache
+      
+    restart: unless-stopped
+    networks:
+      - gpaf_network
+
+networks:
+  gpaf_network:
+    driver: bridge 

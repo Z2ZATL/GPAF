@@ -1,0 +1,63 @@
+services:
+  gpaf:
+    build:
+      context: ../../
+      dockerfile: deployment/docker/Dockerfile
+    container_name: gpaf
+    ports:
+      - "50001:5000"
+    volumes:
+      - ./work_dir:/root
+      - ./logs:/app/logs
+      - ./memory:/app/memory
+      - ./knowledge:/app/knowledge
+      - ./tmp:/app/tmp
+    environment:
+      TZ: Asia/Bangkok
+      RFC_PASSWORD: gpaf-rfc-password-123
+      KEY_RFC_PASSWORD: gpaf-rfc-password-123
+      PYTHONPATH: /app
+      WEB_UI_HOST: 0.0.0.0
+      # Disable RFC for single container setup
+      DISABLE_RFC: "true"
+      # Set production mode
+      FLASK_ENV: production
+      FLASK_DEBUG: "false"
+      # AI Model API Keys (ใส่ API keys ของคุณที่นี่)
+      API_KEY_OPENAI: "your_openai_api_key_here"
+      API_KEY_ANTHROPIC: "your_anthropic_api_key_here"
+      API_KEY_GOOGLE: "your_google_api_key_here"
+      API_KEY_GROQ: "your_groq_api_key_here"
+      API_KEY_MISTRALAI: "your_mistralai_api_key_here"
+      # HuggingFace Token for embedding models
+      HUGGINGFACE_TOKEN: "your_huggingface_token_here"
+      # Authentication
+      AUTH_LOGIN: "admin"
+      AUTH_PASSWORD: "gpaf123"
+      # API Key for external access
+      API_KEY: "gpaf-api-key-123"
+      # Additional required environment variables
+      WEB_UI_PORT: "5000"
+      PYTHONUNBUFFERED: "1"
+      # Database/Storage settings
+      SQLITE_DB_PATH: "/app/memory/database.db"
+      # Logging settings
+      LOG_LEVEL: "INFO"
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
+
+  # Optional: Ollama service for local LLM
+  ollama:
+    image: ollama/ollama:latest
+    container_name: gpaf-ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    restart: unless-stopped
+    profiles:
+      - ollama
+
+volumes:
+  ollama_data: 

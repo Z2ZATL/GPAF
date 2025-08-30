@@ -1,0 +1,67 @@
+# Git files
+.git/
+.gitignore
+.gitattributes
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs and databases
+logs/
+*.log
+*.db
+*.sqlite
+
+# User data (should be mounted as volumes)
+work_dir/
+memory/
+tmp/*
+!tmp/.gitkeep
+
+# Cache directories (anywhere in project)
+**/__pycache__/
+**/.cache/
+*.pyc
+*.pyo
+*.pyd
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Huggingface cache
+**/.cache/huggingface/
+
+# Documentation  
+docs/
+README.md
+LICENSE
+
+# Docker files (when building)
+docker/
+deployment/
+*.yml
+Dockerfile*
+.dockerignore
+
+# Environment files with secrets
+.env
+.env.local
+
+# OS files
+.DS_Store
+Thumbs.db 

@@ -1,0 +1,21 @@
+Traceback (most recent call last):
+  File "/app/run_ui.py", line 10, in <module>
+    from typing import override
+ImportError: cannot import name 'override' from 'typing' (/usr/local/lib/python3.11/typing.py)
+Traceback (most recent call last):
+  File "/app/run_ui.py", line 10, in <module>
+    from typing import override
+ImportError: cannot import name 'override' from 'typing' (/usr/local/lib/python3.11/typing.py)
+Traceback (most recent call last):
+  File "/app/run_ui.py", line 10, in <module>
+    from typing import override
+ImportError: cannot import name 'override' from 'typing' (/usr/local/lib/python3.11/typing.py)
+Traceback (most recent call last):
+  File "/app/run_ui.py", line 10, in <module>
+    from typing import override
+ImportError: cannot import name 'override' from 'typing' (/usr/local/lib/python3.11/typing.py)
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.18.0.2:5000
+No relevant docs were retrieved using the relevance score threshold 0.6

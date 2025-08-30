@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Test</title>
+</head>
+<body>
+    <div id="test-buttons">
+        <h2>Button Functionality Test</h2>
+        <p>Click these buttons to test if they work:</p>
+        
+        <button onclick="testResetChat()" style="margin: 5px; padding: 10px;">Test Reset Chat</button>
+        <button onclick="testNewChat()" style="margin: 5px; padding: 10px;">Test New Chat</button>
+        <button onclick="testSettings()" style="margin: 5px; padding: 10px;">Test Settings</button>
+        
+        <div id="test-results" style="margin-top: 20px; padding: 10px; border: 1px solid #ccc;">
+            Test results will appear here...
+        </div>
+    </div>
+
+    <script>
+        function log(message) {
+            const results = document.getElementById('test-results');
+            results.innerHTML += '<div>' + new Date().toLocaleTimeString() + ': ' + message + '</div>';
+        }
+
+        function testResetChat() {
+            log('Testing resetChat function...');
+            if (typeof window.resetChat === 'function') {
+                log('✅ resetChat function exists');
+                try {
+                    // Don't actually call it, just verify it exists
+                    log('✅ resetChat function is callable');
+                } catch (e) {
+                    log('❌ Error calling resetChat: ' + e.message);
+                }
+            } else {
+                log('❌ resetChat function not found');
+            }
+        }
+
+        function testNewChat() {
+            log('Testing newChat function...');
+            if (typeof window.newChat === 'function') {
+                log('✅ newChat function exists');
+                try {
+                    // Don't actually call it, just verify it exists
+                    log('✅ newChat function is callable');
+                } catch (e) {
+                    log('❌ Error calling newChat: ' + e.message);
+                }
+            } else {
+                log('❌ newChat function not found');
+            }
+        }
+
+        function testSettings() {
+            log('Testing settings function...');
+            if (typeof window.settings === 'function') {
+                log('✅ settings function exists');
+                try {
+                    // Don't actually call it, just verify it exists
+                    log('✅ settings function is callable');
+                } catch (e) {
+                    log('❌ Error calling settings: ' + e.message);
+                }
+            } else {
+                log('❌ settings function not found');
+            }
+        }
+
+        // Check Alpine.js
+        window.addEventListener('DOMContentLoaded', function() {
+            setTimeout(() => {
+                if (window.Alpine) {
+                    log('✅ Alpine.js is loaded');
+                } else {
+                    log('❌ Alpine.js not found');
+                }
+            }, 2000);
+        });
+    </script>
+</body>
+</html> 

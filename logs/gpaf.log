@@ -1,0 +1,84 @@
+Initializing framework...[0m
+Starting server...[0m
+
+[38;2;128;128;128mDebug: Registered middleware for MCP and MCP token[0m
+
+[38;2;128;128;128mDebug: Starting server at 0.0.0.0:5000...[0m
+
+[38;2;255;0;0mError: Failed to pause job loop by development instance: No RFC password, cannot handle RFC calls.[0m
+
+[38;2;255;0;0mError: Failed to pause job loop by development instance: No RFC password, cannot handle RFC calls.[0m
+
+[38;2;255;0;0mError: Failed to pause job loop by development instance: No RFC password, cannot handle RFC calls.[0m
+
+[38;2;255;0;0mError: Failed to pause job loop by development instance: No RFC password, cannot handle RFC calls.[0m
+
+[38;2;255;0;0mError: Failed to pause job loop by development instance: No RFC password, cannot handle RFC calls.[0m
+
+[38;2;128;128;128mDebug: Changing timezone from None to UTC[0m
+
+[38;2;128;128;128mDebug: Changing timezone from None to UTC[0m
+
+
+
+[38;2;128;128;128mDebug: Changing timezone from UTC to Asia/Bangkok[0m
+[38;2;128;128;128mDebug: Changing timezone from UTC to Asia/Bangkok[0m[38;2;128;128;128mDebug: Changing timezone from UTC to Asia/Bangkok[0m
+
+
+[38;2;255;0;0mError: Failed to pause job loop by development instance: No RFC password, cannot handle RFC calls.[0m
+
+[1m[38;2;255;255;255m[48;2;108;52;131mUser message:[0m
+[38;2;255;255;255m> สวัสดี[0m
+
+[38;2;128;128;128mDebug: Loading prompt variables from /app/prompts/default/agent.system.tool.call_sub.py[0m
+Initializing VectorDB...[0m
+
+[38;2;255;0;0mError: Failed to pause job loop by development instance: No RFC password, cannot handle RFC calls.[0m
+Found 2 knowledge files in /app/knowledge/default/main, processing...[0m
+Processed 11 documents from 2 files.[0m
+Processed 0 documents from 0 files.[0m
+Processed 0 documents from 0 files.[0m
+Processed 0 documents from 0 files.[0m
+Processed 0 documents from 0 files.[0m
+Processed 0 documents from 0 files.[0m
+Processed 0 documents from 0 files.[0m
+Processed 0 documents from 0 files.[0m
+Found 1 knowledge files in /app/instruments, processing...[0m
+Processed 1 documents from 1 files.[0m
+
+[1m[38;2;0;128;0m[48;2;255;255;255mGPAF: Generating[0m
+[3m[38;2;179;255;217m{
+[0m[3m[38;2;179;255;217m   [0m[3m[38;2;179;255;217m "[0m[3m[38;2;179;255;217mthought[0m[3m[38;2;179;255;217ms[0m[3m[38;2;179;255;217m":[0m[3m[38;2;179;255;217m [
+[0m[3m[38;2;179;255;217m       [0m[3m[38;2;179;255;217m "[0m[3m[38;2;179;255;217mผู้[0m[3m[38;2;179;255;217mใช้[0m[3m[38;2;179;255;217mยัง[0m[3m[38;2;179;255;217mค[0m[3m[38;2;179;255;217mง[0m[3m[38;2;179;255;217mท[0m[3m[38;2;179;255;217mัก[0m[3m[38;2;179;255;217mท[0m[3m[38;2;179;255;217mาย[0m[3m[38;2;179;255;217mด้วย[0m[3m[38;2;179;255;217mคำ[0m[3m[38;2;179;255;217mว่า[0m[3m[38;2;179;255;217m '[0m[3m[38;2;179;255;217mส[0m[3m[38;2;179;255;217mวั[0m[3m[38;2;179;255;217mสด[0m[3m[38;2;179;255;217mี[0m[3m[38;2;179;255;217m'[0m[3m[38;2;179;255;217m ซ[0m[3m[38;2;179;255;217m้ำ[0m[3m[38;2;179;255;217mหลาย[0m[3m[38;2;179;255;217mครั้ง[0m[3m[38;2;179;255;217m",
+[0m[3m[38;2;179;255;217m       [0m[3m[38;2;179;255;217m "[0m[3m[38;2;179;255;217mไม่มี[0m[3m[38;2;179;255;217mคำ[0m[3m[38;2;179;255;217mถาม[0m[3m[38;2;179;255;217mหรือ[0m[3m[38;2;179;255;217mคำ[0m[3m[38;2;179;255;217mส[0m[3m[38;2;179;255;217mั่ง[0m[3m[38;2;179;255;217mเพิ่มเติม[0m[3m[38;2;179;255;217mใน[0m[3m[38;2;179;255;217mข้อความ[0m[3m[38;2;179;255;217m",
+[0m[3m[38;2;179;255;217m       [0m[3m[38;2;179;255;217m "[0m[3m[38;2;179;255;217mคว[0m[3m[38;2;179;255;217mร[0m[3m[38;2;179;255;217mตอบ[0m[3m[38;2;179;255;217mกลับ[0m[3m[38;2;179;255;217mด้วย[0m[3m[38;2;179;255;217mความ[0m[3m[38;2;179;255;217mสุ[0m[3m[38;2;179;255;217mภาพ[0m[3m[38;2;179;255;217mและ[0m[3m[38;2;179;255;217mเป็น[0m[3m[38;2;179;255;217mม[0m[3m[38;2;179;255;217mิตร[0m[3m[38;2;179;255;217m พร้อม[0m[3m[38;2;179;255;217mแจ[0m[3m[38;2;179;255;217m้ง[0m[3m[38;2;179;255;217mว[0m[3m[38;2;179;255;217m่าส[0m[3m[38;2;179;255;217mาม[0m[3m[38;2;179;255;217mารถ[0m[3m[38;2;179;255;217mสอบ[0m[3m[38;2;179;255;217mถาม[0m[3m[38;2;179;255;217mหรือ[0m[3m[38;2;179;255;217mข[0m[3m[38;2;179;255;217mอ[0m[3m[38;2;179;255;217mความ[0m[3m[38;2;179;255;217mช่วย[0m[3m[38;2;179;255;217mเหล[0m[3m[38;2;179;255;217mือ[0m[3m[38;2;179;255;217mได้[0m[3m[38;2;179;255;217mต[0m[3m[38;2;179;255;217mลอด[0m[3m[38;2;179;255;217mเวลา[0m[3m[38;2;179;255;217m"
+[0m[3m[38;2;179;255;217m   [0m[3m[38;2;179;255;217m ],
+[0m[3m[38;2;179;255;217m   [0m[3m[38;2;179;255;217m "[0m[3m[38;2;179;255;217mtool[0m[3m[38;2;179;255;217m_name[0m[3m[38;2;179;255;217m":[0m[3m[38;2;179;255;217m "[0m[3m[38;2;179;255;217mresponse[0m[3m[38;2;179;255;217m",
+[0m[3m[38;2;179;255;217m   [0m[3m[38;2;179;255;217m "[0m[3m[38;2;179;255;217mtool[0m[3m[38;2;179;255;217m_args[0m[3m[38;2;179;255;217m":[0m[3m[38;2;179;255;217m {
+[0m[3m[38;2;179;255;217m       [0m[3m[38;2;179;255;217m "[0m[3m[38;2;179;255;217mtext[0m[3m[38;2;179;255;217m":[0m[3m[38;2;179;255;217m "[0m[3m[38;2;179;255;217m🌟[0m[3m[38;2;179;255;217m **[0m[3m[38;2;179;255;217mส[0m[3m[38;2;179;255;217mวั[0m[3m[38;2;179;255;217mสด[0m[3m[38;2;179;255;217mี[0m[3m[38;2;179;255;217mค่ะ[0m[3m[38;2;179;255;217m![0m[3m[38;2;179;255;217m**[0m[3m[38;2;179;255;217m\[0m[3m[38;2;179;255;217mn[0m[3m[38;2;179;255;217m\n[0m[3m[38;2;179;255;217mห[0m[3m[38;2;179;255;217mาก[0m[3m[38;2;179;255;217mต้อง[0m[3m[38;2;179;255;217mการ[0m[3m[38;2;179;255;217mสอบ[0m[3m[38;2;179;255;217mถาม[0m[3m[38;2;179;255;217mข้อมูล[0m[3m[38;2;179;255;217m หรือ[0m[3m[38;2;179;255;217mให้[0m[3m[38;2;179;255;217mช่วย[0m[3m[38;2;179;255;217mเหล[0m[3m[38;2;179;255;217mือ[0m[3m[38;2;179;255;217mเรื่อง[0m[3m[38;2;179;255;217mใ[0m[3m[38;2;179;255;217mด[0m[3m[38;2;179;255;217m สาม[0m[3m[38;2;179;255;217mารถ[0m[3m[38;2;179;255;217mพ[0m[3m[38;2;179;255;217mิม[0m[3m[38;2;179;255;217mพ[0m[3m[38;2;179;255;217m์[0m[3m[38;2;179;255;217mบ[0m[3m[38;2;179;255;217mอก[0m[3m[38;2;179;255;217mได้[0m[3m[38;2;179;255;217mเลย[0m[3m[38;2;179;255;217mนะ[0m[3m[38;2;179;255;217mค[0m[3m[38;2;179;255;217mะ[0m[3m[38;2;179;255;217m พร้อม[0m[3m[38;2;179;255;217mให้[0m[3m[38;2;179;255;217mบริการ[0m[3m[38;2;179;255;217mเส[0m[3m[38;2;179;255;217mม[0m[3m[38;2;179;255;217mอ[0m[3m[38;2;179;255;217mค่ะ[0m[3m[38;2;179;255;217m 😊[0m[3m[38;2;179;255;217m"
+[0m[3m[38;2;179;255;217m   [0m[3m[38;2;179;255;217m }
+[0m[3m[38;2;179;255;217m}[0m
+
+[38;2;255;0;0mError: Failed to pause job loop by development instance: No RFC password, cannot handle RFC calls.[0m
+
+[38;2;255;0;0mError: Failed to pause job loop by development instance: No RFC password, cannot handle RFC calls.[0m
+
+[38;2;255;0;0mError: Failed to pause job loop by development instance: No RFC password, cannot handle RFC calls.[0m
+
+[38;2;255;0;0mError: Failed to pause job loop by development instance: No RFC password, cannot handle RFC calls.[0m
+
+[38;2;255;0;0mError: Failed to pause job loop by development instance: No RFC password, cannot handle RFC calls.[0m
+
+[38;2;255;0;0mError: Failed to pause job loop by development instance: No RFC password, cannot handle RFC calls.[0m
+
+[38;2;255;0;0mError: Failed to pause job loop by development instance: No RFC password, cannot handle RFC calls.[0m
+
+[38;2;255;0;0mError: Failed to pause job loop by development instance: No RFC password, cannot handle RFC calls.[0m
+
+[38;2;255;0;0mError: Failed to pause job loop by development instance: No RFC password, cannot handle RFC calls.[0m
+
+[38;2;255;0;0mError: Failed to pause job loop by development instance: No RFC password, cannot handle RFC calls.[0m
+
+[38;2;255;0;0mError: Failed to pause job loop by development instance: No RFC password, cannot handle RFC calls.[0m
+
+[38;2;255;0;0mError: Failed to pause job loop by development instance: No RFC password, cannot handle RFC calls.[0m
